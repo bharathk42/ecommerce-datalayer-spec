@@ -1,0 +1,57 @@
+[
+  {
+    "event": "view_item",
+    "ecommerce": {
+      "currency": "USD",
+      "value": 174.99,
+      "items": [{ "item_id": "SKU-1001", "item_name": "Example Product", "price": 174.99, "quantity": 1 }]
+    }
+  },
+  {
+    "event": "add_to_cart",
+    "ecommerce": {
+      "currency": "USD",
+      "value": 349.98,
+      "items": [{ "item_id": "SKU-1001", "item_name": "Example Product", "price": 174.99, "quantity": 2 }]
+    }
+  },
+  {
+    "event": "begin_checkout",
+    "ecommerce": {
+      "currency": "USD",
+      "value": 349.98,
+      "items": [{ "item_id": "SKU-1001", "item_name": "Example Product", "price": 174.99, "quantity": 2 }]
+    }
+  },
+  {
+    "event": "purchase",
+    "ecommerce": {
+      "transaction_id": "T-100245",
+      "currency": "USD",
+      "value": 349.98,
+      "tax": 31.5,
+      "shipping": 0,
+      "new_customer": "true",
+      "items": [{ "item_id": "SKU-1001", "item_name": "Example Product", "price": 174.99, "quantity": 2 }]
+    }
+  },
+  {
+    "event": "purchase",
+    "ecommerce": {
+      "transaction_id": "T-100246",
+      "currency": "USD",
+      "value": "149.99",
+      "tax": 13.5,
+      "shipping": 0,
+      "new_customer": "not_specified",
+      "items": [{ "item_id": "SKU-2002", "item_name": "Another Product", "price": 149.99, "quantity": 1 }]
+    }
+  },
+  {
+    "event": "add_to_cart",
+    "ecommerce": {
+      "value": 49.99,
+      "items": [{ "item_id": "SKU-3003", "item_name": "Accessory", "price": 49.99, "quantity": 1 }]
+    }
+  }
+]
